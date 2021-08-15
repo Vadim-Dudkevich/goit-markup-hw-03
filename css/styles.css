@@ -1,0 +1,215 @@
+/* Цвет основного текста #212121 */
+/* Вторичный цвет текста #757575 */
+/* Цвет актента текста, кнопка #2196f3 */
+/* Белый цвет текста #ffffff */
+
+:root {
+  --first-text-color: #757575;
+  --second-text-color: #212121;
+  --akcent-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  /* background-color: FFFFFF; */
+  color: var(--first-text-color);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* ========================= Header =========================*/
+
+/*---------------- Logo ----------------*/
+.header-logo,
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  color: var(--white-text-color);
+}
+.header-logo-web,
+.footer-logo-web {
+  color: var(--akcent-text-color);
+}
+
+/*---------------- Site nav ----------------*/
+.nav-link {
+  color: var(--second-text-color);
+  font-size: 14px;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.current {
+  color: var(--akcent-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--akcent-text-color);
+}
+
+/*---------------- Site nav contacts ----------------*/
+.contacts-link {
+  color: var(--first-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  /* text-decoration: none; */
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--akcent-text-color);
+}
+
+/*========================= Hero =========================*/
+.hero {
+  background-color: #2f303a;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*---------------- Button ----------------*/
+.hero-button {
+  background-color: var(--akcent-text-color);
+  color: var(--white-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  /* display: flex;
+  align-items: center;
+  text-align: center;  */
+  letter-spacing: 0.06em;
+}
+
+/*---------------- Button P  ----------------*/
+.filter-button {
+  color: var(--second-text-color);
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-text-color);
+  background-color: var(--akcent-text-color);
+}
+
+/*---------------- Features ----------------*/
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+
+/*---------------- Work ----------------*/
+.work-title {
+  color: var(--second-text-color);
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+/*---------------- Team ----------------*/
+.team-title {
+  color: var(--second-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+.team-item-text {
+  color: var(--second-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+
+/* ======================= PORTFOLIO ========================= */
+.portfolio-title {
+  color: var(--second-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  color: var(--first-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* ========================= Footer ========================= */
+.footer {
+  background-color: #2f303a;
+}
+/* Address */
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  color: var(--white-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.74;
+  letter-spacing: 0.03em;
+}
+
+.address-contacts-link:hover,
+.address-contacts-link:focus {
+  color: var(--akcent-text-color);
+}
