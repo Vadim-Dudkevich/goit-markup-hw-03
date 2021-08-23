@@ -21,10 +21,7 @@
 
 body {
   font-family: Roboto, sans-serif;
-  /* font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em; */
-  /* background-color: FFFFFF; */
+  background-color: FFFFFF;
   color: var(--first-text-color);
 }
 
@@ -196,7 +193,6 @@ img {
 /*========================= Hero =========================*/
 .hero {
   align-items: center;
-  height: 600px;
   text-align: center;
 
   background-color: #2f303a;
@@ -206,6 +202,7 @@ img {
   /* Позиционирование */
   padding-top: 200px;
   margin-bottom: 30px;
+
   /* Блочная модель */
 
   /* Типографика */
@@ -223,9 +220,11 @@ img {
 /*---------------- Button ----------------*/
 .hero-button {
   /* Позиционирование */
+  margin-bottom: 200px;
 
   /* Блочная модель */
   display: inline-block;
+  padding: 10px 32px;
   min-width: 200;
 
   /* Типографика */
@@ -235,9 +234,8 @@ img {
   letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  /* Отображение */
 
-  padding: 10px 32px;
+  /* Отображение */
   border-radius: 4px;
   background-color: var(--akcent-text-color);
   color: var(--white-text-color);
@@ -455,7 +453,6 @@ img {
 
 /* ========================= Footer ========================= */
 .footer {
-  height: 252px;
   background-color: #2f303a;
 }
 
@@ -484,15 +481,20 @@ img {
 .address {
   display: block;
   font-style: normal;
+
   color: var(--white-text-color);
 }
 
 .address-list {
-  color: var(--white-text-color);
+  padding-bottom: 60px;
+}
 
+.address-item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  color: var(--white-text-color);
 }
 
 .address-contacts-link {
