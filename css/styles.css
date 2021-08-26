@@ -79,12 +79,6 @@ img {
 
 /* ========================= Header =========================*/
 .header .container {
-  /* Позиционирование */
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-
-  /* Блочная модель */
   display: flex;
 }
 
@@ -101,6 +95,12 @@ img {
 
 /*---------------- Logo ----------------*/
 .header-logo {
+  /* Позиционирование */
+  display: block;
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+
   /* Типографика */
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -112,13 +112,6 @@ img {
 
 .header-logo-web {
   color: var(--akcent-text-color);
-}
-
-.logo {
-  /* Позиционирование */
-  margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 24px;
 }
 
 /*---------------- Site nav ----------------*/
@@ -192,7 +185,9 @@ img {
 
 /*========================= Hero =========================*/
 .hero {
-  align-items: center;
+  /* align-items: center; */
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 
   background-color: #2f303a;
@@ -200,7 +195,6 @@ img {
 
 .hero-title {
   /* Позиционирование */
-  padding-top: 200px;
   margin-bottom: 30px;
 
   /* Блочная модель */
@@ -219,13 +213,10 @@ img {
 
 /*---------------- Button ----------------*/
 .hero-button {
-  /* Позиционирование */
-  margin-bottom: 200px;
-
   /* Блочная модель */
   display: inline-block;
   padding: 10px 32px;
-  min-width: 200;
+  min-width: 200px;
 
   /* Типографика */
   font-size: 16px;
@@ -236,6 +227,7 @@ img {
   text-align: center;
 
   /* Отображение */
+  border: 0;
   border-radius: 4px;
   background-color: var(--akcent-text-color);
   color: var(--white-text-color);
@@ -280,6 +272,10 @@ img {
 }
 
 /*---------------- Work ----------------*/
+.work-section {
+  padding-top: 0;
+}
+
 .work-list {
   display: flex;
 }
@@ -334,9 +330,13 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-text-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-item-text {
   /* Позиционирование */
-  margin-top: 30px;
   margin-bottom: 10px;
 
   /* Типографика */
@@ -351,8 +351,6 @@ img {
 }
 
 .team-text {
-  margin-bottom: 30px;
-
   /* Типографика */
   font-size: 16px;
   line-height: 1.19;
@@ -369,9 +367,6 @@ img {
 }
 
 .portfolio-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
 
   flex-wrap: wrap;
@@ -430,9 +425,6 @@ img {
 
   /* Блочная модель */
   display: flex;
-
-  /* Типографика */
-  align-items: center;
 }
 
 .filter-item:not(:last-child) {
@@ -440,6 +432,15 @@ img {
 }
 
 .filter-button {
+  padding: 6px 32px;
+  border: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
   color: var(--second-text-color);
   cursor: pointer;
   border-radius: 4px;
@@ -453,12 +454,14 @@ img {
 
 /* ========================= Footer ========================= */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
 }
 
 .footer-logo {
   /* Позиционирование */
-  padding-top: 60px;
   margin-bottom: 20px;
 
   /* Блочная модель */
@@ -483,10 +486,6 @@ img {
   font-style: normal;
 
   color: var(--white-text-color);
-}
-
-.address-list {
-  padding-bottom: 60px;
 }
 
 .address-item {
